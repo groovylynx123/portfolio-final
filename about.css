@@ -1,0 +1,216 @@
+#cs1300-gallery {
+  background-color: lightblue;
+}
+
+/* Uncomment below if images are way too big.
+Selects all image tags and makes them 500px;
+ */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
+
+body {
+  font-family:'Lato';
+  padding-left: 20%;
+  padding-right:20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  color:#0b5394;
+  text-align: center;
+}
+
+h2 {
+  text-align:center;
+  margin: 5%;
+}
+
+
+.gallery-container {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  flex: 1;
+  align-items:center
+  
+  
+}
+
+li {
+  margin-top:2%
+}
+
+h4 {
+  font-weight:bolder;
+}
+
+.lower {
+  justify-content: center;
+}
+
+
+
+/* Navigation Bar */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:-15px;
+  color:#6fa8dc;
+}
+
+.left-header {
+  font-size:24px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  float: left;
+  margin-left: -80px;
+  color:#6fa8dc;
+}
+
+.right-header {
+  margin-top:10px;
+  margin-right:-80px;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  float: right;
+  font-weight:900;
+}
+
+.horizontal-list {
+  display:inline;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 18px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:link {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:visited {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:active { text-decoration: none; }
+
+.bio-description {
+  margin-top:5px;
+  color: black;
+  font-size: 18px;
+}
+
+
+
+
+ /* FOOTER */
+
+
+/* Create three equal columns that floats next to each other */
+
+
+.column-right {
+  float: right;
+  width: 48%;
+  font-family: 'Lato';
+  line-height: 1.8;
+  transition: width 2s;
+
+}
+
+.column-left {
+  float: left;
+  width: 48%;
+  line-height: 1.8;
+  transition: width 2s;
+}
+
+.hello {
+  font-family: 'Rubik';
+  font-size: 24px;
+  color:#0b5394
+}
+
+.row {
+  margin-top:20px;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 98%;
+  }
+
+  .column-left {
+    width:98%;
+    margin: auto;
+  }
+
+  .column-right {
+    width:98%;
+    margin: auto;
+  }
+  
+}
+
+.footer {
+  margin-top:8%
+}
+
+/* FOOTER */
+.footer-left {
+  margin-left: -80px;
+  font-size:18px;
+  float: left;
+  color:#65B1F1;
+  font-family: 'Rubik';
+}
+
+.footer-right {
+  margin-right: -80px;
+  font-size: 18px;
+  font-family: 'Rubik';
+  float: right;
+  color:#65B1F1;
+}
+
+.horizontal-list:hover{
+  color: #0b5394;
+  transition: transform .2s;
+}
+
+.name:hover {
+  color: #0b5394;
+  transition: transform .2s;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; 
+color:#65B1F1}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

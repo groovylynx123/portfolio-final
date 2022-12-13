@@ -1,0 +1,214 @@
+#cs1300-gallery {
+  background-color: lightblue;
+}
+
+/* Uncomment below if images are way too big.
+Selects all image tags and makes them 500px;
+ */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
+
+body {
+  font-family:'Lato';
+  padding-left: 20%;
+  padding-right:20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  color:#0b5394;
+  text-align: center;
+}
+
+h2 {
+  text-align:center;
+  margin: 5%;
+}
+
+
+.gallery-container {
+  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  flex: 1;
+  align-items:center
+  
+  
+}
+
+.project-section-header, .project-title {
+  color: #6fa8dc
+  
+}
+
+.interview-questions {
+  font-weight: 900px;
+  color:#0b5394;
+
+}
+
+li {
+  margin-top:2%
+}
+
+h4 {
+  font-weight:bolder;
+}
+
+.lower {
+  justify-content: center;
+}
+
+button {
+  
+  width: 210px;
+  height:70px;
+  padding:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  margin:20px;
+}
+
+
+/* Navigation Bar */
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:-15px;
+  color:#6fa8dc;
+}
+
+.left-header {
+  font-size:24px;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
+  float: left;
+  margin-left: -80px;
+  color:#6fa8dc;
+}
+
+.right-header {
+  margin-top:10px;
+  margin-right:-80px;
+  font-size: 18px;
+  font-family: 'IBM Plex Mono';
+  float: right;
+  font-weight:900;
+}
+
+
+.horizontal-list:hover{
+  color: #0b5394;
+  transition: transform .2s;
+}
+
+.name:hover {
+  color: #0b5394;
+  transition: transform .2s;
+}
+
+.horizontal-list {
+  display:inline;
+  margin-left:20px;
+  margin-right:20px;
+  font-size: 18px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:link {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:visited {
+  text-decoration: none;
+  color:#6fa8dc;
+}
+
+.nav-links:active { text-decoration: none; }
+
+
+.footer {
+  margin-top:8%
+}
+
+/* FOOTER */
+.footer-left {
+  margin-left: -80px;
+  font-size:18px;
+  float: left;
+  color:#65B1F1;
+  font-family: 'Rubik';
+}
+
+.footer-right {
+  margin-right: -80px;
+  font-size: 18px;
+  font-family: 'Rubik';
+  float: right;
+  color:#65B1F1;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; 
+color:#65B1F1}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+/*Other Projects Footer */
+.other-projects {
+  text-align: center;
+}
+
+.project-image {
+  transition: transform .2s; /* Animation */
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+.project-title {
+  color: #0b5394;
+}
+
+
+
+.project-row {
+  margin-top:20px;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+/* Clear floats after the columns */
+.project-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-column{
+  float: left;
+  width: 30%;
+  font-family: 'Lato';
+  line-height: 1.8;
+  transition: width 2s;
+  padding:12.5px;
+
+}
+

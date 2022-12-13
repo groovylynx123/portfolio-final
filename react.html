@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <title>CS 1300: UI/UX React Development</title>
+    <!-- import javascript variables and functions -->
+    <script src="app.js" defer></script>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="react.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <div class="nav-bar">
+      <a class="nav-links" href="index.html">
+        <div class="left-header">
+          <p class="name">GROOVY LYNX</p>
+        </div>
+      </a>
+      <div class="right-header">
+        <ul>
+          <a class="nav-links" href="index.html#projects-section">
+            <li class="horizontal-list">Work</li>
+          </a>
+          <a class="nav-links" href="about.html">
+            <li class="horizontal-list">About</li>
+          </a>
+          <a class="nav-links" target="_blank" rel="noopener noreferrer" href="http://site.iugaza.edu.ps/walhabil/files/2016/09/Resume-tip-sheet-and-samples-2016-17.pdf">
+            <li class="horizontal-list">Resume</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div id="projects">
+      <div id="project-one">
+        <h1>Dessert Shop: Development using React</h1>
+        <img class="panini-press-cartoon" src="./dessert-shop-cover.png" alt="Dessert Shop Cover">
+        <h2 class="project-section-header">Project Overview</h2>
+        <p class="project-description">This project focused on developing an interactive interface using React for CSCI1300: User Interface and User Interaction. Our task was to create an interactive interface, use interface components, and tie the components to an internal data state. I choose to develop a dessert shop website.
+        </p>
+        <h2 class="project-section-header"> Part 1:  Develop the Goal of the Application and Value to a User</h2>
+        <p class="project-description">
+          The goal of the application is to provide a way for people to browse different ice cream/sorbet flavors for a dessert shop. This website allows users to browse different flavors and filter the flavors by the ice cream type (fruit or custard) and by where the ice cream was made (in-house or sourced from a vendor). The website also sorts the flavors by most expensive and least expensive to allow users to choose their flavor based on their budget.
+          <br>
+        <br>
+      </p>
+
+        <h2 class="project-section-header">Part 2: Functionality and Usability Requirements:</h2>
+        <p>
+          For the web app, the assignment had the following requirements:
+        </p>
+        <ul>
+          <li>My application should handle any combination of filters and sorting methods. </li>
+          <li>A method to revert back to the original state without refreshing the page </li>
+          <li>Have the option to add to and remove items. The total should update accordingly.</li>
+          <li>The design should be intuitive and easy to use. </li>
+        </ul>
+
+
+        <h2 class="project-section-header">Part 3: Deploying the Application</h2>
+        <p>After several iterations, this is the final website linked <a target="_blank" rel="noopener noreferrer" href="https://groovylynx123.github.io/development-uiux/">here</a>. Below is the screenshots of the website.</p>
+        <img class="panini-press-cartoon" src="./dessert_1.png" alt="Dessert Shop 1">
+        <img class="panini-press-cartoon" src="./dessert_2.png" alt="Dessert Shop 2">
+        <p class="interview-questions"><b>Usability Principles Considered</b></p>
+        <p class="project-description">I tried to make the layout have good usability by deciding to have the buttons as radio buttons for the filters instead of checkboxes or regular buttons. Originally, I had the default buttons for the filters but this made it really difficult for the user to know which filter was selected. This helped with memorability because it allows the user to remember which filter and sort were selected.
+          <br>
+          <br>
+          I also made it so that the filter buttons and sort buttons are on the left side, the content in the middle, and the favorite items on the right side. I did this to have quick learnability. This helps the user read from left to right and makes the website intuitive to navigate.
+          <br>
+          <br>
+          For usability, I decided to go with a simple white background so that the images of the ice cream really pop out. Since there were no distracting background colors, I think this drew the user’s attention toward the ice cream flavors.
+        </p>
+        <p class="interview-questions"><b>Organization of Components</b></p>
+        <p class="project-description">  My components are the Favorite List and the Ice Cream Item. The Favorite List is the favorite ice cream items that automatically sum up the total price of the ice cream in the list. The prop gets passed into this function is the cartState which is a list of ice cream items and their prices. The Ice Cream Item has two props. The item which contains all the data regarding the ice cream item and the addToFavorites function which is a function that enables the user to add the ice cream cart to the Favorites list.
+        </p>
+      
+
+        <h2 class="project-section-header">Part 4: Project Takeaways</h2>
+        <p>
+          From this project, I was able to develop a website using React. Specifically, I learned a lot about interface components, internal data state, and prop parameters. From this, I learned how to create more dynamic websites and I hope to use React more frequently in the future to create more responsive websites. 
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    
+    <h3 class="other-projects">Other Projects</h3>
+    <div class="row">
+      <a href="iterative.html" class="project-footer">
+        <div class="column">
+          <img class="project-image" width="100%" src="./proj-1.png" alt="Iterative">
+          <p class="project-title">Finnt Iterative Design</p>
+        </div>
+      </a>
+      <a href="redesign.html" class="project-footer">
+        <div class="column">
+          <img class="project-image" width="100%" src="./proj-2.png" alt="UIUX Redesign">
+          <p class="project-title">Responsive Redesign</p>
+        </div>
+      </a>
+      <a href="personas.html" class="project-footer">
+        <div class="column">
+          <img class="project-image" width="100%" src="./proj-3.png" alt="Personas and Storyboarding">
+          <p class="project-title">Personas & Storyboarding</p>        </div>
+      </a>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+      <div class="footer-left">
+        <p>© 2022 Groovy Lynx</p>
+      </div>
+      <div class="footer-right">
+        <p><a href="">Email</a> | <a href="">Github</a> | <a href="">LinkedIn</a></p>
+      </div>
+    </div>
+  </body>
+
+</html>
